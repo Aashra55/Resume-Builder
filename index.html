@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Lobster&family=Prociono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parent-container">
+        <div class="main">
+            <div class="main-container">
+                <div class="name"><h1>Aashra Saleem</h1></div>
+                <div class="image"></div>
+                <div class="text"><span class="main-text">Interactive</span><br>Static Resume</div>
+            </div>
+        </div>
+        <div class="skills" id="skill-toggle">
+            <div class="skills-content">
+                <div class="sk-wasted"></div>
+                <div class="sk-work">
+                    <h1 class="heading">SKILLS</h1><br><br>
+                    <div class="information">
+                        <ul>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>Typescript</li>
+                            <li>Javascript</li>
+                            <li>Node.js</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>MS Office</li>
+                            <li>Time Management</li>
+                            <li>Communication Skills</li>
+                            <li>Team Work</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-btn toggle-btn">
+                <div class="open-btn skill-color">
+                    <button id="skills-open">SKILLS</button>
+                    <button id="skills-close"class="close">SKILLS</button>
+                </div>
+            </div>
+        </div>
+        <div class="experience" id="experience-toggle">
+            <div class="experience-content">
+                <div class="ex-wasted"></div>
+                <div class="ex-work">
+                    <h1 class="heading">WORK EXPERIENCE</h1><br><br>
+                    <div class="information">
+                        <p><span>Company: </span>XYZ Company Pvt. Ltd.</p>
+                        <p><span>Role: </span>Full-Stack Developer</p>
+                        <p><span>Duration: </span>4 years</p>
+                        <br>
+                        <p><span>Company: </span>XYZ Company Pvt. Ltd.</p>
+                        <p><span>Role: </span>Back-end Developer</p>
+                        <p><span>Duration: </span>2 years</p>
+                        <br>
+                        <p><span>Company: </span>XYZ Company Pvt. Ltd.</p>
+                        <p><span>Role: </span>Front-end Developer</p>
+                        <p><span>Duration: </span>2 years</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-btn toggle-btn">
+                <div class="open-btn exp-color">
+                    <button id="experience-open">WORK <br> EXPERIENCE</button>
+                    <button id="experience-close"class="close">WORK <br> EXPERIENCE</button>
+                </div>
+            </div>
+        </div>
+        <div class="education" id="education-toggle">
+            <div class="education-content">
+                <div class="ed-wasted"></div>
+                <div class="ed-work">
+                    <h1 class="heading edu">EDUCATION</h1><br><br>
+                    <div class="information">
+                        <h1 class="degree">Bachelors</h1>
+                        <p>XYZ University of Pakistan</p>
+                        <p>xxxx - xxxx</p>
+                        <br>
+                        <h1 class="degree">Intermediate</h1>
+                        <p>XYZ High School Karachi</p>
+                        <p>xxxx - xxxx</p>
+                        <br>
+                        <h1 class="degree">Matriculation</h1>
+                        <p>XYZ Secondary School Karachi</p>
+                        <p>xxxx - xxxx</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-btn toggle-btn">
+                <div class="open-btn edu-color">
+                    <button id="education-open">EDUCATION</button>
+                    <button id="education-close"class="close">EDUCATION</button>
+                </div>
+            </div>
+        </div>
+        <div class="personal" id="personal-toggle">
+            <div class="personal-content">
+                <h1 class="heading">PERSONAL <br>INFORMATION</h1><br><br><br>
+                <div class="information">
+                <h2><span>Name:</span> Ashra Saleem</h2>
+                <h2><span>Father Name:</span> Muhammad Saleem</h2>
+                <h2><span>Sex:</span> Female</h2>
+                <h2><span>Marital Status:</span> Single</h2>
+                <h2><span>Residence:</span> 123 Main Street, XYZ</h2>
+                <h2><span>Email Address:</span> xyz123@gmail.com</h2>
+                </div>
+            </div>
+            <div class="personal-btn toggle-btn">
+                <div class="open-btn per-color">
+                    <button id="personal-open">PERSONAL INFORMATION</button>
+                    <button id="personal-close" class="close">PERSONAL INFORMATION</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

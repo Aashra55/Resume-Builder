@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.parent-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.skills{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-30%);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px #000;
+    background-color: #fff;
+}
+.experience{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-38%);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px #000;
+    background-color: #fff;
+}
+.education{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-48%);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px #000;
+    background-color: #fff;
+}
+.personal{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-60%);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px #000;
+    background-color: #fff;
+}
+.skill-shift{
+    transform: translateX(0.5%);
+}
+.experience-shift{
+    transform: translateX(0.6%);
+}
+.education-shift{
+    transform: translateX(0.8%);
+}
+.personal-shift{
+    transform: translateX(0.2%);
+}
+.main{
+    display: flex;
+    justify-content: right;
+}
+.main-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url(Capture.jpeg);
+    margin-left: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.name,.text{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name{
+    font-family: "Dancing Script", system-ui;
+    font-size: 30px;
+}
+.text{
+    font-family: "Prociono",system-ui;
+    font-size: 40px;
+    text-align: center;
+}
+.main-text{
+    font-family: "Lobster", system-ui;
+    font-size: 50px;
+}
+.personal,.education,.experience,.skills{
+    display: flex;
+}
+.personal-content{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.personal-btn{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+.education-content{
+    height: 100%;
+    width: 79%;
+    display: flex;
+}
+.education-btn{
+    height: 100%;
+    width: 21%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+.experience-content{
+    height: 100%;
+    width: 82%;
+    display: flex;
+}
+.experience-btn{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+.skills-content{
+    height: 100%;
+    width: 84%;
+    display: flex;
+}
+.skills-btn{
+    height: 100%;
+    width: 16%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+.open-btn{
+    width: 100%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: burlywood;
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
+    transform: translateX(40%);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+button{
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    rotate: 180deg;
+    writing-mode: vertical-rl;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+.close{
+    display: none;
+}
+.open{
+    display: none;
+}
+.sk-wasted{
+    width: 70%;
+    height: 100%;
+}
+.sk-work{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ex-wasted{
+    height: 100%;
+    width: 60%;
+}
+.ex-work{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ed-wasted{
+    width: 50%;
+    height: 100%;
+}
+.ed-work{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.per-color{
+    background-color: #869c09;
+}
+.edu-color{
+    background-color: #852d0d;
+}
+.exp-color{
+    background-color: rgb(202, 44, 97);
+}
+.skill-color{
+    background-color: rgb(4, 39, 121);
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: "Poppins", system-ui;
+}
+.heading{
+    font-family: "Poppins",system-ui;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2;
+}
+span{
+    font-weight: 700;
+    font-size: 22px;
+}
+.edu{
+    width: 100%;
+    text-align: center;
+}
+.degree{
+    font-weight: 600;
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+    list-style: square;
+}
