@@ -260,4 +260,81 @@ h4{
         overflow-wrap: break-word;
     }
 }
+@media(max-width:768px){
+    body{
+        width: 100vw;
+    }
+    .form,.result{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    legend{
+        font-size: 19px;
+    }
+    label{
+        font-size: 15px;
+    }
+    input{
+        margin-left: 5px;
+        height: 40px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+    textarea{
+        font-size: 13px;
+    }
+    button{
+        font-size: 18px;
+    }
+    .display{
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        /* gap: 22px; */
+    }
+    h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .section{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .resume-name{
+        font-size: 14px;
+    }
+    h4{
+        font-size: 20px;
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    p{
+        font-size: 13px;
+        margin: 0;
+    }
+    li{
+        font-size: 13px;
+        margin: 0;
+    }
+    #share{
+        padding-left: 0;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    #share-link{
+        margin: 0;
+        padding: 4px;
+        font-size: 13px;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
 
+}
