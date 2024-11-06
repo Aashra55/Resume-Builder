@@ -44,6 +44,8 @@ fieldset{
 .result{
     flex-direction: column;
     text-align: left;
+    justify-content: space-between;
+    align-items: center;
 }
 input{
     outline: none;
@@ -64,6 +66,8 @@ label{
 h1{
     color: palevioletred;
     font-size: 40px;
+    width: 100%;
+    text-align: center;
 }
 fieldset{
     color: palevioletred;
@@ -101,46 +105,58 @@ button{
     font-size: 20px;
 }
 .resume-name{
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 2px;
     font-weight: 500;
+    font-family: "Poppins",system-ui;
 }
 .display{
     width: 100%;
-    padding-left: 18px;
+    /* padding-left: 18px; */
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
     /* align-items: center; */
+    font-family: "Poppins",system-ui;
 }
 p{
     display: inline-block;
-    font-weight: 300;
+    font-weight: lighter;
     font-size: 20px;
+    font-family: "Poppins",system-ui;
+    font-weight: 300;
 }
 h2{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 25px;
+    width: 100%;
 }
 li{
     list-style: none;
     font-size: 20px;
+    font-weight: lighter;
     font-weight: 300;
 }
 h4{
     color: palevioletred;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
     margin: 18px;
+    width: 98%;
+    text-align: center;
 }
 .section{
     border-radius: 8px;
     /* border: 2px solid palevioletred; */
-    width: 45%;
+    width: 46%;
     height: 100%;
     padding: 15px;
     /* background-color: rgb(253, 235, 241); */
+    margin: 0;
+    margin-left: 4px;
 }
 #share{
     width: 100%;
@@ -153,6 +169,18 @@ h4{
     color: palevioletred;
     display: block;
     margin-left: 15px;
+}
+.preview{
+    width: 100%;
+}
+#sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.my-about{
+    width: 100%;
+    position: inherit;
 }
 /* Responsiveness */
 @media(max-width:320px),(max-width:375px),(max-width:425px){
