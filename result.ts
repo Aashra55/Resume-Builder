@@ -42,11 +42,31 @@ document.addEventListener('DOMContentLoaded',()=>{
 let shareContainer = document.getElementById('share')as HTMLDivElement;
 let shareLink = document.getElementById('share-link')as HTMLAnchorElement; 
 
-//making URL
-const shareURL = `${window.location.href}?username=${encodeURIComponent(resumeData.Name)}`;
+//to share
 shareContainer.style.display = 'block';
-shareLink.href = shareURL;
-shareLink.textContent = shareURL;
+shareContainer.addEventListener('click',()=>{
+    if(navigator.share){
+        if(resumeData.Name){
+            const share = {
+                title : `Resume of ${resumeData.Name}`,
+                text: `Check out this resume: ${resumeData.Name}`,
+                url: window.location.href
+            }
+            navigator.share(share)
+            .then(()=>{
+                console.log('Successfully shared')
+            })
+            .catch((error)=>{
+                console.log('Error Sharing:',error)
+            })    
+        }else{
+            alert(`Resume Data is incomplete. Please fill out the form.`)
+        }
+    }else{
+        alert(`Web share API is not supported in this browser`)
+    }
+})
+
 });
 
 let download = document.getElementById('download')as HTMLButtonElement; 

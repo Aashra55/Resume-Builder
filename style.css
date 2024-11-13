@@ -182,6 +182,37 @@ h4{
     width: 100%;
     position: inherit;
 }
+#share-item{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+    padding: 0;
+    padding-left: 10%;
+}
+.share-button{
+    background-color: palevioletred;
+    color: #fff;
+    height: 50px;
+    border-radius: 13px;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+#share{
+    padding: 0;
+    padding-top: 10px;
+    width: 40%;
+    cursor: pointer;
+}
+#download{
+    width: 40%;
+    margin: 0;
+}
 /* Responsiveness */
 @media(max-width:320px),(max-width:375px),(max-width:425px){
     body{
@@ -260,6 +291,16 @@ h4{
         width: 100%;
         overflow-wrap: break-word;
     }
+    #share-item{
+        flex-direction: column;
+        padding: 0;
+    }
+    #share{
+        width: 304px;
+    }
+    #download{
+        width: 304px;
+    }
 }
 @media(max-width:768px){
     body{
@@ -337,5 +378,7 @@ h4{
         width: 100%;
         overflow-wrap: break-word;
     }
-
+    #share-item{
+        padding: 0;
+    }
 }

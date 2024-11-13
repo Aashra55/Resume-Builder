@@ -13,11 +13,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     var shareContainer = document.getElementById('share');
     var shareLink = document.getElementById('share-link');
-    //making URL
-    var shareURL = "".concat(window.location.href, "?username=").concat(encodeURIComponent(resumeData.Name));
+    //to share
     shareContainer.style.display = 'block';
-    shareLink.href = shareURL;
-    shareLink.textContent = shareURL;
+    shareContainer.addEventListener('click', function () {
+        if (navigator.share) {
+            if (resumeData.Name) {
+                var share = {
+                    title: "Resume of ".concat(resumeData.Name),
+                    text: "Check out this resume: ".concat(resumeData.Name),
+                    url: window.location.href
+                };
+                navigator.share(share)
+                    .then(function () {
+                    console.log('Successfully shared');
+                })
+                    .catch(function (error) {
+                    console.log('Error Sharing:', error);
+                });
+            }
+            else {
+                alert("Resume Data is incomplete. Please fill out the form.");
+            }
+        }
+        else {
+            alert("Web share API is not supported in this browser");
+        }
+    });
 });
 var download = document.getElementById('download');
 //PDF Download
