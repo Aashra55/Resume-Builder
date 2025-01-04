@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- resume input form -->
+    <div class="form" id="hidden">
+        <h1>Shareable Resume Builder</h1>
+        <form action="" id="form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Name">
+                <label for="">Father's Name</label>
+                <input type="text" name="father-name" id="f-name" placeholder="Enter Father's Name">
+                <label for="">Religion</label>
+                <input type="text" name="religion" id="religion" placeholder="Religion">
+                <label for="">Date of Birth</label>
+                <input type="text" name="dob" id="dob" placeholder="Date of Birth">
+                <label for="">Marital Status</label>
+                <input type="text" name="marital-status" id="status" placeholder="Married or Single">
+                <label for="">Nationality</label>
+                <input type="text" name="nationality" id="nationality" placeholder="Nationality">
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ener email">
+                <label for="">Contact</label>
+                <input type="tel" name="contact" id="contact" placeholder="xxxx-xxxxxxx">
+            </fieldset>
+            <fieldset>
+                <legend>About</legend>
+                <label for="">About Me</label>
+                <textarea name="" id="about" rows="6" placeholder="Enter about"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <label for="">Education</label>
+                <textarea name=""  rows="6" placeholder="Enter Education (Add comma before starting a new line)" id="education"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="">Experience</label>
+                <textarea name="" id="experience" rows="6" placeholder="Enter Work Experience (Add comma before starting a new line)"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="">Skills</label>
+                <textarea name=""  rows="6" placeholder="Enter Skills (Add comma before starting a new line)" id="skills"></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Generate Resume</button>
+        </form>
+        <button id="preview">Preview</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

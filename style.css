@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    width: 90vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.form,.result{
+    background-color: #fff;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #000;
+    padding: 10px;
+    margin-bottom: 40px;
+    /* position: absolute; */
+    flex-direction: column;
+    margin-left: 120px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.result{
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #000;
+    width: 97.5%;
+    margin: 10px;
+    padding: 4px;
+    letter-spacing: normal;
+    font-size: 16px;
+}
+label{
+    margin-left: 10px;
+    font-size: 20px;
+}
+h1{
+    color: palevioletred;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+fieldset{
+    color: palevioletred;
+    border-radius: 20px;
+    overflow: hidden;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+}
+textarea{
+    border: none;
+    /* box-shadow: 0 0 8px #000; */
+    margin: 7px;
+    /* border-radius: 10px; */
+    padding: 4px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    background-color: palevioletred;
+    color: #fff;
+    width: 95%;
+    height: 50px;
+    border-radius: 13px;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.resume-name{
+    font-size: 22px;
+    margin-top: 2px;
+    font-weight: 500;
+    font-family: "Poppins",system-ui;
+}
+.display{
+    width: 100%;
+    /* padding-left: 18px; */
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    font-family: "Poppins",system-ui;
+}
+p{
+    display: inline-block;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: "Poppins",system-ui;
+    font-weight: 300;
+}
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    width: 100%;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: lighter;
+    font-weight: 300;
+}
+h4{
+    color: palevioletred;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 18px;
+    width: 98%;
+    text-align: center;
+}
+.section{
+    border-radius: 8px;
+    /* border: 2px solid palevioletred; */
+    width: 46%;
+    height: 100%;
+    padding: 15px;
+    /* background-color: rgb(253, 235, 241); */
+    margin: 0;
+    margin-left: 4px;
+}
+#share{
+    width: 100%;
+    padding-left: 170px;
+}
+.text{
+    margin-left: 15px;
+}
+#share-link{
+    color: palevioletred;
+    display: block;
+    margin-left: 15px;
+}
+.preview{
+    width: 100%;
+}
+#sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.my-about{
+    width: 100%;
+    position: inherit;
+}
+#share-item{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+    padding: 0;
+    padding-left: 10%;
+}
+.share-button{
+    background-color: palevioletred;
+    color: #fff;
+    height: 50px;
+    border-radius: 13px;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+#share{
+    padding: 0;
+    padding-top: 10px;
+    width: 40%;
+    cursor: pointer;
+}
+#download{
+    width: 40%;
+    margin: 0;
+}
+/* Responsiveness */
+@media(max-width:320px),(max-width:375px),(max-width:425px){
+    body{
+        width: 100vw;
+    }
+    .form,.result{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    legend{
+        font-size: 19px;
+    }
+    label{
+        font-size: 15px;
+    }
+    input{
+        margin-left: 5px;
+        height: 40px;
+        font-size: 13px;
+        border-radius: 10px;
+        width: 96%;
+    }
+    textarea{
+        font-size: 13px;
+    }
+    button{
+        font-size: 18px;
+    }
+    .display{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 22px;
+    }
+    h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .section{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .resume-name{
+        font-size: 14px;
+    }
+    h4{
+        font-size: 20px;
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    p{
+        font-size: 13px;
+        margin: 0;
+    }
+    li{
+        font-size: 13px;
+        margin: 0;
+    }
+    #share{
+        padding-left: 0;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    #share-link{
+        margin: 0;
+        padding: 4px;
+        font-size: 13px;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+    #share-item{
+        flex-direction: column;
+        padding: 0;
+    }
+    #share{
+        width: 304px;
+    }
+    #download{
+        width: 304px;
+    }
+}
+@media(max-width:768px){
+    body{
+        width: 100vw;
+    }
+    .form,.result{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    legend{
+        font-size: 19px;
+    }
+    label{
+        font-size: 15px;
+    }
+    input{
+        margin-left: 5px;
+        height: 40px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+    textarea{
+        font-size: 13px;
+    }
+    button{
+        font-size: 18px;
+    }
+    .display{
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        /* gap: 22px; */
+    }
+    h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .section{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .resume-name{
+        font-size: 14px;
+    }
+    h4{
+        font-size: 20px;
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    p{
+        font-size: 13px;
+        margin: 0;
+    }
+    li{
+        font-size: 13px;
+        margin: 0;
+    }
+    #share{
+        padding-left: 0;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    #share-link{
+        margin: 0;
+        padding: 4px;
+        font-size: 13px;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+    #share-item{
+        padding: 0;
+    }
+}
